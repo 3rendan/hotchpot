@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+// import 'src/css/main.css';
 import Items from './Items.js';
 import NewItems from './NewItems.js';
-import Update from './Update.js';
+import UpdateItems from './UpdateItems.js';
 // import Show from './components/Show.js';
 import axios from 'axios';
-class App extends React.Component {
+class Index extends React.Component {
   state = {
     items: false
   }
@@ -37,7 +37,7 @@ class App extends React.Component {
           author: this.state.author,
           accession_number: this.state.accession_number
       };
-      const updatedRecord = [];
+      const updateItem = [];
       console.log(id)
       fetch(`http://localhost:3000/items/${id}`,
         {
@@ -53,7 +53,7 @@ class App extends React.Component {
        })
        .catch(error => console.log(error))
       }
-  deleteRecord = (id, i) =>{
+  deleteItem = (id, i) =>{
     fetch('http://localhost:3000/items/' + id,
       {
         method: 'DELETE'
@@ -69,7 +69,7 @@ class App extends React.Component {
     }
 render(){
   return (
-    <div className="App">
+    <div className="Index">
     <div className='container'>
       <div className="App-header">
         <h1>Digital Archive</h1>
@@ -88,4 +88,4 @@ render(){
 }
 }
 
-export default App;
+export default Index;

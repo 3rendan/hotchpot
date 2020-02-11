@@ -76,3 +76,184 @@ Processing by ItemsController#index as */*
 Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 2.0ms | Allocations: 914)
 
 
+Started GET "/items" for ::1 at 2020-02-10 20:18:23 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 1.0ms | Allocations: 988)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:19:01 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.0ms | Allocations: 902)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:19:26 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.4ms | Allocations: 917)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:21:08 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (2.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 2.4ms | Allocations: 901)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:22:42 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 901)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:23:48 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms | Allocations: 901)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:23:48 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 901)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:24:32 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 902)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:24:32 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 901)
+
+
+Started POST "/items" for ::1 at 2020-02-10 20:24:43 -0500
+Processing by ItemsController#create as HTML
+  Parameters: {"title"=>"two", "author"=>"sdfa", "accession_number"=>"ljk;ljk", "item"=>{"title"=>"two", "accession_number"=>"ljk;ljk", "author"=>"sdfa"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "accession_number", "author", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "two"], ["accession_number", "ljk;ljk"], ["author", "sdfa"], ["created_at", "2020-02-11 01:24:43.618062"], ["updated_at", "2020-02-11 01:24:43.618062"]]
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 1.0ms | ActiveRecord: 2.4ms | Allocations: 2331)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:24:43 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1021)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:25:18 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.9ms | Allocations: 1021)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:25:18 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (3.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 3.6ms | Allocations: 1021)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:25:45 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1021)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:25:45 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1021)
+
+
+Started DELETE "/items/2" for ::1 at 2020-02-10 20:25:48 -0500
+Processing by ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:44:in `set_item'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[36mItem Destroy (7.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+Completed 204 No Content in 37ms (ActiveRecord: 8.5ms | Allocations: 3761)
+
+
+Started POST "/items" for ::1 at 2020-02-10 20:26:02 -0500
+Processing by ItemsController#create as HTML
+  Parameters: {"title"=>"two", "author"=>"three", "accession_number"=>"four", "item"=>{"title"=>"two", "accession_number"=>"four", "author"=>"three"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "accession_number", "author", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "two"], ["accession_number", "four"], ["author", "three"], ["created_at", "2020-02-11 01:26:02.650298"], ["updated_at", "2020-02-11 01:26:02.650298"]]
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 2329)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:26:02 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1021)
+
+
+Started POST "/items" for ::1 at 2020-02-10 20:26:13 -0500
+Processing by ItemsController#create as HTML
+  Parameters: {"title"=>"five", "author"=>"six", "accession_number"=>"seven", "item"=>{"title"=>"five", "accession_number"=>"seven", "author"=>"six"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "accession_number", "author", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "five"], ["accession_number", "seven"], ["author", "six"], ["created_at", "2020-02-11 01:26:13.287473"], ["updated_at", "2020-02-11 01:26:13.287473"]]
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 2.2ms | Allocations: 2327)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:26:13 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1141)
+
+
+Started POST "/items" for ::1 at 2020-02-10 20:26:26 -0500
+Processing by ItemsController#create as HTML
+  Parameters: {"title"=>"eight ", "author"=>"nine", "accession_number"=>"ten", "item"=>{"title"=>"eight ", "accession_number"=>"ten", "author"=>"nine"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "accession_number", "author", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "eight "], ["accession_number", "ten"], ["author", "nine"], ["created_at", "2020-02-11 01:26:26.044633"], ["updated_at", "2020-02-11 01:26:26.044633"]]
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 2327)
+
+
+Started GET "/items" for ::1 at 2020-02-10 20:26:26 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1262)
+
+

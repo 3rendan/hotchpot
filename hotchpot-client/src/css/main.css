@@ -2,7 +2,16 @@
 /* * {
   border: 1px solid salmon;
 } */
-
+.header {
+  background-color: #000;
+  color: white;
+  height: 200px;
+}
+.footer {
+  background-color: #000;
+  color: white;
+  height: 200px;
+}
 .App {
   text-align: center;
 }
