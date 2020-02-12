@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React, { Component } from "react"
+import axios from "axios"
 
 
-class Update extends Component {
+class UpdateItem extends Component {
     // state = {
-    //     artist: '',
-    //     title: '',
-    //     label: '',
-    //     format: '',
-    //     year: ''
+    //     artist: "",
+    //     title: "",
+    //     label: "",
+    //     format: "",
+    //     year: ""
     // }
     componentDidMount = () => {
-        axios.get('http://localhost:3001/items/id/' + this.findID())
+        axios.get("http://localhost:3001/items/id/" + this.findID())
         .then(response => {
             const state = {
                 title: response.data.title,
@@ -34,7 +34,7 @@ class Update extends Component {
     //     const updatedRecord = [];
     //     updatedRecord.push(Items);
     //     if(this.state.title){
-    //         axios.put('http://localhost:3001/Items/id/' + this.findID(), {...Items})
+    //         axios.put("http://localhost:3001/Items/id/" + this.findID(), {...Items})
     //     }
     // }
     render () {
@@ -73,7 +73,7 @@ class Update extends Component {
                       <input type="submit" className="submit btn-default" />
                     </form>
                     <div>
-                        <button className='btn btn-primary' type="submit">Submit Changes</button>
+                        <button className="btn btn-primary" type="submit">Submit Changes</button>
                     </div>
 
                 <div>
@@ -86,4 +86,4 @@ class Update extends Component {
 }
 
 
-export default Update
+export default UpdateItem

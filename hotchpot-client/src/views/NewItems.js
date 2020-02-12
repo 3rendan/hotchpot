@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class NewItems extends Component {
   state = {
     Items : [],
     formInputs: {
-      title: '',
-      author: '',
-      accession_number: ''
+      title: "",
+      author: "",
+      accession_number: ""
     }
   }
   handleChange = (event) => {
@@ -15,12 +15,12 @@ class NewItems extends Component {
   }
   handleSubmit  = (event) =>{
     event.preventDefault()
-    fetch('http://localhost:3000/items', {
+    fetch("http://localhost:3000/items", {
       body: JSON.stringify(this.state.formInputs),
-      method: 'POST',
+      method: "POST",
    headers: {
-     'Accept': 'application/json, text/plain, */*',
-     'Content-Type': 'application/json'
+     "Accept": "application/json, text/plain, */*",
+     "Content-Type": "application/json"
    }
  })
    .then(createdItem => {
@@ -30,9 +30,9 @@ class NewItems extends Component {
      // reset the form
      this.setState({
        formInputs: {
-         title: '',
-         author: '',
-         accession_number: ''
+         title: "",
+         author: "",
+         accession_number: ""
        },
        items: [jsonedItem, ...this.props.items]
      })

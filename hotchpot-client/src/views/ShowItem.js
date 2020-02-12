@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import Items from './Items.js';
-import axios from 'axios'
+import React, { Component } from "react"
+import Items from "./Items.js";
+import axios from "axios"
 
 class Show extends Component {
   constructor(props){
     super(props)
     this.state = {
-          title: '',
-          author: '',
-          accession_number: ''
+          title: "",
+          author: "",
+          accession_number: ""
       }
     this.showItem = this.showItem.bind(this)
     }
@@ -16,7 +16,7 @@ class Show extends Component {
       this.getItems();
     }
     getItems = () =>{
-    fetch('http://localhost:3000/items')
+    fetch("http://localhost:3000/items") // SHOULD I ASK FOR AN :id PARAM HERE?
       .then(response => response.json())
       .then(json => this.setState({items: json}))
       .catch(error => console.error(error))

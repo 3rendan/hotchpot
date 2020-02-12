@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Righteous|Walter+Turncoat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Righteous|Walter+Turncoat&display=swap");
 /* * {
   border: 1px solid salmon;
 } */
@@ -49,30 +49,30 @@
   }
 }
 body {
-  font-family: 'Walter Turncoat', cursive;
+  font-family: "Walter Turncoat", cursive;
   background-color: pink;
   color: purple;
 }
 .artist {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   color: purple;
 }
 .btn {
   margin: 10px
 }
 h1 {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-style: 3em;
   color: purple;
   text-shadow: 2px 2px #ff0000;
 }
 h3 {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   color: purple;
   font-size: 2em;
 }
 .release {
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
   color: cyan;
   text-shadow: 2px 2px #ff0000;
 }

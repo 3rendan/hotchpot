@@ -1,10 +1,10 @@
-import React from 'react';
-// import 'src/css/main.css';
-import Items from './Items.js';
-import NewItems from './NewItems.js';
-import UpdateItems from './UpdateItems.js';
-// import Show from './components/Show.js';
-import axios from 'axios';
+import React from "react";
+// import "src/css/main.css";
+import Items from "./Items.js";
+import NewItems from "./NewItems.js";
+import UpdateItem from "./UpdateItem.js";
+// import Show from "./components/Show.js";
+import axios from "axios";
 class Index extends React.Component {
   state = {
     items: false
@@ -13,11 +13,11 @@ class Index extends React.Component {
     this.getItems();
   }
   getItems = () =>{
-  fetch('http://localhost:3000/items')
-    .then(response => response.json())
-    .then(json => this.setState({items: json}))
-    .catch(error => console.error(error))
-  }
+    fetch('http://localhost:3000/items')
+      .then(response => response.json())
+      .then(json => this.setState({items: json}))
+      .catch(error => console.error(error))
+    }
   // showRecord = (id) => {
     // axios.get(`http://localhost:3000/Items/${id}/`)
     // .then(response => this.setState({
@@ -41,7 +41,7 @@ class Index extends React.Component {
       console.log(id)
       fetch(`http://localhost:3000/items/${id}`,
         {
-          method: 'PUT'
+          method: "PUT"
         })
        .then(updatedItem => {
          return updatedItem.json()
@@ -54,9 +54,9 @@ class Index extends React.Component {
        .catch(error => console.log(error))
       }
   deleteItem = (id, i) =>{
-    fetch('http://localhost:3000/items/' + id,
+    fetch("http://localhost:3000/items/" + id,
       {
-        method: 'DELETE'
+        method: "DELETE"
       })
       .then(data => {
         this.setState({
@@ -70,11 +70,11 @@ class Index extends React.Component {
 render(){
   return (
     <div className="Index">
-    <div className='container'>
+    <div className="container">
       <div className="App-header">
         <h1>Digital Archive</h1>
       </div>
-      <div className='row'>
+      <div className="row">
         <>
           <NewItems items={this.state.items} getItems={this.getItems} />
         </>
