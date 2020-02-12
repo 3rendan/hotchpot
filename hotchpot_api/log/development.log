@@ -1063,3 +1063,10 @@ Processing by ItemsController#index as */*
 Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1622)
 
 
+Started GET "/items" for ::1 at 2020-02-11 21:21:06 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.9ms | Allocations: 1696)
+
+

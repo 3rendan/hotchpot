@@ -13,8 +13,8 @@ let indexRoutes = [
     component: Index
   },
   {
-    path: "/show-item",
-    name: "ShowItem",
+    path: "/show/:id",
+    name: "Show",
     component: ShowItem
   },
   {
