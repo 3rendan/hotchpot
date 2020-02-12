@@ -6,7 +6,16 @@ class Items extends Component {
   render () {
     return (
       <div className="col-sm-7">
-          <h1>hello</h1>
+        { this.props.items && this.props.items.map((item, i) => {
+            return  (
+                <div key={item.id} className="items">
+                    <Link to={`/show/${item.id}`}><h3><span className="title">{ item.title } </span>| <span className="author">{ item.author } </span></h3></Link>
+                    <small>The accession number is { item.accession_number }</small><br />
+                    <button className="btn btn-warning" onClick={() => this.props.handleUpdate(item.id)}> UPDATE </button>
+                    <button className="btn btn-danger" onClick={() => this.props.deleteItem(item.id, i)}> DELETE </button>
+                </div>
+            )
+        })}
       </div>
     )
   }

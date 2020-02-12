@@ -1,6 +1,7 @@
 import React from "react";
 // import "src/css/main.css";
 import Items from "./Items.js";
+// import ShowItem from "./ShowItem.js";
 import NewItems from "./NewItems.js";
 import UpdateItem from "./UpdateItem.js";
 // import Show from "./components/Show.js";
@@ -13,21 +14,13 @@ class Index extends React.Component {
     this.getItems();
   }
   getItems = () =>{
-    fetch('http://localhost:3000/items')
-      .then(response => response.json())
-      .then(json => this.setState({items: json}))
-      .catch(error => console.error(error))
+    axios.get('http://localhost:3001/items')
+        .then(response => this.setState({
+            title: response.data.title,
+            author: response.data.author,
+            accession_number: response.data.accession_number
+        }));
     }
-  // showRecord = (id) => {
-    // axios.get(`http://localhost:3000/Items/${id}/`)
-    // .then(response => this.setState({
-    //     artist: response.data.artist,
-    //     title: response.data.title,
-    //     format: response.data.format,
-    //     label: response.data.label,
-    //     year: response.data.year
-    // }));
-  // }
 
   handleUpdate = (id) => {
       // e.preventDefault();
