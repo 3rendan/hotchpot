@@ -62,9 +62,6 @@ render(){
   return (
     <div className="Index">
     <div className="container">
-      <div className="App-header">
-        <h1>Digital Archive</h1>
-      </div>
       <div className="row">
         <>
           <NewItems items={this.state.items} getItems={this.getItems} />
