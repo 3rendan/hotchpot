@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 import Route from "react-router-dom/Route";
+import axios from "axios";
 
 class Items extends Component {
   render () {

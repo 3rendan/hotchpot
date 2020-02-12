@@ -14,13 +14,11 @@ class Index extends React.Component {
     this.getItems();
   }
   getItems = () =>{
-    axios.get('http://localhost:3001/items')
-        .then(response => this.setState({
-            title: response.data.title,
-            author: response.data.author,
-            accession_number: response.data.accession_number
-        }));
-    }
+    fetch('http://localhost:3000/items')
+    .then(response => response.json())
+    .then(json => this.setState({items: json}))
+    .catch(error => console.error(error))
+  }
 
   handleUpdate = (id) => {
       // e.preventDefault();
