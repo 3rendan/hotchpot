@@ -88,3 +88,7 @@ h3 {
 .Items {
   border:2px inset cyan;
 }
+.navbar {
+  background-color: #000;
+  color: #fff;
+}

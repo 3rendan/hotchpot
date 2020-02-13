@@ -6,15 +6,17 @@ import * as serviceWorker from "./serviceWorker";
 import Index from './views/Index.js';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
+import Navigation from './components/Navigation.js';
 
 
 let hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
-  <Header/>
+    <Header />
+    <Navigation />
     <Index />
-    <Footer/>,
+    <Footer />
   </Router>,
   document.getElementById("root")
 );
